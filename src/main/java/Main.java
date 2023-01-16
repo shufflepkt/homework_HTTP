@@ -37,5 +37,8 @@ public class Main {
                 .filter(x -> x.getUpvotes() != null && x.getUpvotes() > 0)
 //                .forEach(System.out::println);
                 .forEach(x -> System.out.println(x.getText()));
+
+        response.close();
+        httpClient.close();
     }
 }
